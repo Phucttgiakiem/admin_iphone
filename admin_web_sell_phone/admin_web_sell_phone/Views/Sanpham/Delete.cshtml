@@ -1,0 +1,111 @@
+﻿@model SanphamDeleteModel
+
+  @* // var thuonghieu = ViewBag.thuonghieu;*@
+
+
+@functions {
+    public string GetImageSrc(String imgSrc)
+    {
+        return String.IsNullOrEmpty(imgSrc) ? "default-thumbnail.png" : imgSrc;
+    }
+}
+<form method="post" asp-action="Delete" asp-controller="Sanpham">
+        <div class="row mb-3 justify-content-between">
+            <h2 class="col-12 col-md-8">Chi tiết sản phẩm</h2>
+            <div class="col-12 col-md-4">
+                <div class="d-flex flex-row justify-content-md-end">
+                    
+                        <a href="@Url.Action("Index", "SanPham")" class="btn btn-outline-primary mx-1">Quay lại</a>
+                        <button type="submit" class="btn btn-outline-danger mx-1">Delete</button>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Thông tin sản phẩm</div>
+
+                        <div class="row">
+                            <div class="col-sm-8 d-flex flex-column w-75">
+                                <div class="row mb-2">
+                                    <b class="col-12 col-md-6 bold">
+                                        Mã sản phẩm
+                                    </b>
+                                    <p class="col-12 col-md-6">
+                                        <input class="form-control" asp-for="@Model.ID_sanpham" readonly>
+                                    </p>
+                                </div>
+                                        @*<div class="row mb-2">
+                                            <b class="col-12 col-md-12 bold">
+                                                Mô tả
+                                            </b>
+                                        </div>
+                                        <div class="col-12 col-md-12">
+                                            <div class="container">
+                                                <table class="table table-hover">
+                                                    <tr>
+                                                        <td class="col-12 col-md-6">Màn hình:</td>
+                                                        <td class="col-12 col-md-6">@Model.Manhinh</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-12 col-md-6">Kích thước:</td>
+                                                        <td class="col-12 col-md-6">@Model.Kichthuoc</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-12 col-md-6">Camera:</td>
+                                                        <td class="col-12 col-md-6">@Model.Camera</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-12 col-md-6">Màu sắc:</td>
+                                                        <td class="col-12 col-md-6">@Model.Mausac</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-12 col-md-6">Pin:</td>
+                                                        <td class="col-12 col-md-6">@Model.Pin</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <b class="col-12 col-md-6 bold">
+                                                Thương hiệu
+                                            </b>
+                                            <p class="col-12 col-md-6">
+                                                @thuonghieu
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-4" style="width: 200px; height: 200px;">
+                                        <img src="~/Content/img/@GetImageSrc(Model.HinhAnh)"
+                                             class="img-thumbnail" />
+                                    </div>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</form>
+@*<script>
+    function delete_iphone(id) {
+        debugger;
+        if (confirm('bạn có chắc chắn muốn xóa sản phẩm này ?')) {
+            $.ajax({
+                url: '/Sanpham/Delete?id=' + id,
+                success: function () {
+                    alert('sản phẩm được xóa');
+                    windhow.location = "Index"
+                },
+                error: function () {
+                    alert('sản phẩm xóa thất bại');
+                }
+            })
+        }
+    }
+</script>*@

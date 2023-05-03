@@ -1,0 +1,148 @@
+﻿
+@model SanphamDetail_EditModel
+@{
+    var Brand = ViewBag.thuonghieu;
+}
+@functions {
+        public string GetImageSrc(String imgSrc)
+        {
+            return String.IsNullOrEmpty(imgSrc) ? "default-thumbnail.png" : imgSrc;
+        }
+}
+<form method="post" asp-action="Edit" enctype="multipart/form-data" >
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="row mb-3 justify-content-between">
+        <h2 class="col-12 col-md-8">Sửa thông tin sản phẩm</h2>
+        <div class="col-12 col-md-4">
+            <div class="d-flex flex-row justify-content-md-end">
+                <a href="@Url.Action("Detail", "SanPham", new { id = Model.ID_sanpham} )" class="btn btn-outline-primary mx-1">Quay lại</a>
+                <button type="submit" class="btn btn-primary mx-1">Sửa thông tin</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title text-center text-md-start">Thông tin sản phẩm</div>
+
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="col-12 d-flex flex-column w-75">
+                            <div class="row mb-2">
+                                <div class="form-group">
+                                    <label class="form-label" asp-for="@Model.ID_sanpham">Mã sản phẩm</label>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" asp-for="@Model.ID_sanpham" value="@Model.ID_sanpham" readonly/>
+                
+                                </div>
+                                <span asp-validation-for="@Model.ID_sanpham" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group">
+                                    <label class="form-label" asp-for="@Model.Ten_Dienthoai">Tên điện thoại</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="tensp" asp-for="@Model.Ten_Dienthoai" value="@Model.Ten_Dienthoai"/>
+                                   
+                                </div>
+                                <span asp-validation-for="@Model.Ten_Dienthoai" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-2">
+                               <div class="form-group">
+                                    <label class="form-label" asp-for="@Model.Kichthuoc">kích thước</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="@Model.Kichthuoc" value="@Model.Kichthuoc"/>
+                                    
+                                </div>
+                                <span asp-validation-for="@Model.Kichthuoc" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group">
+                                    <label class="form-label" asp-for="@Model.Camera">Camera</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="@Model.Camera" value="@Model.Camera"/>
+                                    
+                                </div>
+                                <span asp-validation-for="@Model.Camera" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group">
+                                    <label class="form-label" asp-for="@Model.Mausac">Màu sắc</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="@Model.Mausac" value="@Model.Mausac"/>
+                                   
+                                </div>
+                                <span asp-validation-for="@Model.Mausac" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group">
+                                    <label class="form-label" asp-for="@Model.Pin">Pin</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="@Model.Pin" value="@Model.Pin"/>
+                                    
+                                </div>
+                                <span asp-validation-for="@Model.Pin" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group">
+                                    <label class="form-label" asp-for="@Model.Manhinh">màn hình</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" asp-for="@Model.Manhinh" value="@Model.Manhinh" />
+                                    
+                                </div>
+                                <span asp-validation-for="@Model.Manhinh" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group">
+                                    <label class="form-label" asp-for="@Model.BaoHanh">Bảo hành</label>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" asp-for="@Model.BaoHanh" value="@Model.BaoHanh" />
+                                    
+                                </div>
+                                <span asp-validation-for="@Model.BaoHanh" class="text-danger"></span>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group">
+                                    <label class="form-label" asp-for="@Model.ID_ThuongHieu">Thương hiệu</label>
+                                    <select asp-for="@Model.ID_ThuongHieu" class="form-select">
+
+                                        @{
+                                            foreach (var item in Brand)
+                                            {
+                                                if (item.Id_Thuonghieu == @Model.ID_ThuongHieu)
+                                                {
+                                                    <option value="@item.Id_Thuonghieu" selected="selected">@item.Tenthuonghieu</option>
+                                                    continue;
+                                                }
+                                                <option value="@item.Id_Thuonghieu">@item.Tenthuonghieu</option>
+                                            }
+                                        }
+                                    </select>
+                                    <span asp-validation-for="@Model.ID_ThuongHieu" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="form-group">
+                                    <img src="~/Content/img/@GetImageSrc(Model.HinhAnh)"
+                                         class="img-thumbnail"
+                                         style="width: 200px; height: 200px;" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="file" asp-for="@Model.Image" id="inputFile">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

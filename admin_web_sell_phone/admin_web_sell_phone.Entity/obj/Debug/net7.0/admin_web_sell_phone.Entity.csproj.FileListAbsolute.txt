@@ -1,0 +1,24 @@
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\bin\Debug\net7.0\admin_web_sell_phone.Entity.deps.json
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\bin\Debug\net7.0\admin_web_sell_phone.Entity.dll
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\bin\Debug\net7.0\admin_web_sell_phone.Entity.pdb
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.csproj.AssemblyReference.cache
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.AssemblyInfoInputs.cache
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.AssemblyInfo.cs
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.csproj.CoreCompileInputs.cache
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.dll
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\refint\admin_web_sell_phone.Entity.dll
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.pdb
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\ref\admin_web_sell_phone.Entity.dll
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\bin\Debug\net7.0\admin_web_sell_phone.Entity.deps.json
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\bin\Debug\net7.0\admin_web_sell_phone.Entity.dll
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\bin\Debug\net7.0\admin_web_sell_phone.Entity.pdb
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.csproj.AssemblyReference.cache
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.AssemblyInfoInputs.cache
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.AssemblyInfo.cs
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.csproj.CoreCompileInputs.cache
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.dll
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\refint\admin_web_sell_phone.Entity.dll
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\admin_web_sell_phone.Entity.pdb
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Entity\obj\Debug\net7.0\ref\admin_web_sell_phone.Entity.dll

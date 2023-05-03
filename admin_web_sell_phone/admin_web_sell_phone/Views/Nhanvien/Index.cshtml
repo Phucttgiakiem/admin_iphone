@@ -1,0 +1,55 @@
+﻿@model List<admin_web_sell_phone.Models.NhanvienIndexModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Nhân Viên</h1>
+
+<p>
+    <a class="btn btn-primary" role="button" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Mã Nhân Viên
+            </th>
+            <th>
+                Tên Nhân Viên
+            </th>
+            <th>
+                Số Điện Thoại
+            </th>
+            <th>
+                Email
+            </th>
+            <th>Tác vụ</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_Nhanvien)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tennhanvien)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sdt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    <a class="btn btn-outline-success" role="button" asp-action="Detail" asp-route-id="@item.ID_Nhanvien">Detail</a> |
+                    <a class="btn btn-outline-warning" role="button" asp-action="Edit" asp-route-id="@item.ID_Nhanvien">Edit</a> |
+                    <a class="btn btn-outline-danger" role="button" asp-action="Delete" asp-route-id="@item.ID_Nhanvien">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

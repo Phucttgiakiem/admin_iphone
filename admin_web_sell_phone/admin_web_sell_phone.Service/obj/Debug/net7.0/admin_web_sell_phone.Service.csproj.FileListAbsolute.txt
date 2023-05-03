@@ -1,0 +1,34 @@
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.Service.deps.json
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.Service.dll
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.Service.pdb
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.DataAccess.dll
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.Entity.dll
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.DataAccess.pdb
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.Entity.pdb
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.csproj.AssemblyReference.cache
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.AssemblyInfoInputs.cache
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.AssemblyInfo.cs
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.csproj.CoreCompileInputs.cache
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.csproj.CopyComplete
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.dll
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\refint\admin_web_sell_phone.Service.dll
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.pdb
+D:\laptrinhc\csharp\doan_phanlop\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\ref\admin_web_sell_phone.Service.dll
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.Service.deps.json
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.Service.dll
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.Service.pdb
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.DataAccess.dll
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.Entity.dll
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.DataAccess.pdb
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\bin\Debug\net7.0\admin_web_sell_phone.Entity.pdb
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.csproj.AssemblyReference.cache
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.AssemblyInfoInputs.cache
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.AssemblyInfo.cs
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.csproj.CoreCompileInputs.cache
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.csproj.CopyComplete
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.dll
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\refint\admin_web_sell_phone.Service.dll
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\admin_web_sell_phone.Service.pdb
+D:\file word\xayphanmemphanlop\quanlybandt\admin_web_sell_phone\admin_web_sell_phone.Service\obj\Debug\net7.0\ref\admin_web_sell_phone.Service.dll

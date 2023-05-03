@@ -1,0 +1,111 @@
+﻿@model PhieuNhapModel
+@{
+    var nhacungcap = ViewBag.Tennhacungcap;
+    var chitietphieunhap = ViewBag.ChiTietPhieuNhap;
+    var sanpham = ViewBag.Sanpham;
+}
+@functions{
+    private string getDateFormat(DateTime? date)
+    {
+        if (date == null)
+        {
+            return "";
+        }
+        var notNullDate = date ?? DateTime.Now;
+        return notNullDate.ToString("dd/MM/yyyy");
+    }
+}
+<div>
+    <div class="d-flex flex-row justify-content-between mb-3">
+        <h2>Xem phiếu nhập hàng</h2>
+        <div>
+            <a href="@Url.Action("Index", "Phieunhap")" class="btn btn-outline-primary mx-1">Thoát</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Thông tin phiếu nhập</div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <b class="col-3 bold">
+                                Nhà cung cấp
+                            </b>
+                            <p class="col-9">
+                                @nhacungcap
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <b class="col-3 bold">
+                                Ngày tạo phiếu
+                            </b>
+                            <p class="col-9">
+                                @getDateFormat(Model.Ngaynhap)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <!-- Begin Chi tiết phiếu nhập -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Chi tiết phiếu nhập</div>
+                        <table class="table table-responsive table-hover bg-white align-middle text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Hình ảnh
+                                    </th>
+                                    <th scope="col">
+                                        Sản phẩm
+                                    </th>
+                                    <th scope="col">
+                                        Giá nhập
+                                    </th>
+                                    <th scope="col">
+                                        Số lượng nhập
+                                    </th>
+                                </tr>
+                            </thead>
+                        <tbody id="chiTietPhieuNhap">
+                           
+                                   @foreach(var item2 in sanpham){
+                                    
+                                        <tr>
+                                            <td style="width: 100px; height: 100px;">
+                                                <img src="@item2.HinhAnh" class="img-thumbnail">
+                                            </td>
+                                            <td scope="row">
+                                                @item2.Ten_Dienthoai
+                                            </td>
+                                             @foreach(var item in chitietphieunhap){
+                                                if (item.ID_sanpham == item2.ID_sanpham)
+                                                {
+                                                    <td>
+                                                    @String.Format("{0:N0}", item.gianhap)
+                                                    </td>
+                                                    <td>
+                                                        @item.soluongnhap
+                                                    </td>
+                                                
+                                                }
+                                             }
+                                        </tr>                                         
+                                  }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Begin Chi tiết phiếu nhập -->
+
+        <textarea id="listCtpn" class="form-control d-none" name="listCtpn"></textarea>
+
+    </div>
+
+</div>

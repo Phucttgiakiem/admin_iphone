@@ -1,0 +1,141 @@
+﻿@model SanphamCreateModel
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="d-flex flex-row justify-content-between mb-3">
+        <h2>Thêm sản phẩm mới</h2>
+        <div>
+            <a href="@Url.Action("Index", "SanPham")" class="btn btn-outline-primary mx-1">Thoát</a>
+            <button type="submit" class="btn btn-primary mx-1">Lưu</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Thông tin sản phẩm</div>
+                    <!-- Multi Columns Form -->
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <label asp-for="@Model.Ten_Dienthoai" class="form-label">
+                                Tên sản phẩm
+                            </label>
+                            <input type="text"
+                                   class="form-control"
+                                   asp-for="@Model.Ten_Dienthoai"
+                                    />
+                            <span asp-validation-for="@Model.Ten_Dienthoai" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <label asp-for="@Model.Kichthuoc" class="form-label">
+                                Kích thước
+                            </label>
+                            <input type="text"
+                                   class="form-control"
+                                   asp-for="@Model.Kichthuoc" />
+                            <span asp-validation-for="@Model.Kichthuoc" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label asp-for="@Model.ID_ThuongHieu" class="form-label">
+                                Thương hiệu
+                            </label>
+                            <div class="d-flex flex-row">
+                                    <select class="form-select h-50 w-50 me-2" asp-for="@Model.ID_ThuongHieu" asp-items="@Model.thuonghieu">
+                                        <option value="">---Lựa chọn thương hiệu---</option>
+                                    </select>
+                                <span asp-validation-for="@Model.ID_ThuongHieu" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label asp-for="@Model.GiaBan" class="form-label">
+                                Giá bán
+                            </label>
+                            <input type="number"
+                                   class="form-control"
+                                   asp-for="@Model.GiaBan" />
+                            <span asp-validation-for="@Model.GiaBan" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <label asp-for="@Model.Soluong" class="form-label">
+                                Số lượng
+                            </label>
+                            <input type="number"
+                                   class="form-control"
+                                   asp-for="@Model.Soluong" />
+                            <span asp-validation-for="@Model.Soluong" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <label asp-for="@Model.Camera" class="form-label">
+                                Camera
+                            </label>
+                            <input type="text"
+                                   class="form-control"
+                                   asp-for="@Model.Camera" />
+                            <span asp-validation-for="@Model.Camera" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <label asp-for="@Model.Pin" class="form-label">
+                                Pin
+                            </label>
+                            <input type="text"
+                                   class="form-control"
+                                   asp-for="@Model.Pin" />
+                            <span asp-validation-for="@Model.Pin" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <label asp-for="@Model.Mausac" class="form-label">
+                                Màu sắc
+                            </label>
+                            <input type="text"
+                                   class="form-control"
+                                   asp-for="@Model.Mausac" />
+                            <span asp-validation-for="@Model.Mausac" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <label asp-for="@Model.Manhinh" class="form-label">
+                                Màn hình
+                            </label>
+                            <input type="text"
+                                   class="form-control"
+                                   asp-for="@Model.Manhinh" />
+                            <span asp-validation-for="@Model.Manhinh" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <label asp-for="@Model.BaoHanh" class="form-label">
+                                Bảo hành
+                            </label>
+                            <input type="text"
+                                   class="form-control"
+                                   asp-for="@Model.BaoHanh" />
+                            <span asp-validation-for="@Model.BaoHanh" class="text-danger"></span>
+                        </div>
+                    </div><!-- End Multi Columns Form -->
+                </div>
+            </div>
+        </div>
+
+       <div class="col-lg-6">
+            <!-- Begin row -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Ảnh sản phẩm</div>
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <div class="btn btn-primary btn-icon-text">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <input asp-for="@Model.Image" type="file" value="Upload" />
+                                        <span asp-validation-for="@Model.Image" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+        </div>
+    </div>
+</form>

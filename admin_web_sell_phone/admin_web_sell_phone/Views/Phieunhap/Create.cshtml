@@ -1,0 +1,120 @@
+﻿@{
+    var nhacungung = ViewBag.Nhacungung;
+    var sanpham = ViewBag.Sanpham;
+}
+<form method="post" action="@Url.Action("Create", "PhieuNhap")">
+    <div class="d-flex flex-row justify-content-between mb-3">
+        <h2>Tạo phiếu nhập hàng</h2>
+        <div>
+            <a href="@Url.Action("Index", "PhieuNhap")" class="btn btn-outline-primary mx-1">Thoát</a>
+            <button type="submit" class="btn btn-primary mx-1">Lưu</button>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Thông tin phiếu nhập</div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="form-label">
+                                Nhà cung cấp
+                            </label>
+                            <div class="d-flex flex-row">
+                                <select class="form-select h-50 w-50 me-2" name="idNhaCungCap">
+                                    @foreach (var ncc in nhacungung)
+                                    {
+                                        <option value="@ncc.ID_Nhacungcap">@ncc.Tennhacungcap</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    <div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+                <!-- Begin Sản phẩm -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">Các sản phẩm</div>
+                            <table id="variants" class="table table-responsive table-hover bg-white align-middle text-center">
+                                <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Hình ảnh
+                                    </th>
+                                    <th scope="col">
+                                        Sản phẩm
+                                    </th>
+                                    <th scope="col">
+                                        Tùy chọn
+                                    </th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                    @foreach(var item in sanpham)
+                                    {
+                                        <tr id="@item.ID_sanpham">
+                                            <td>@item.HinhAnh</td>
+                                            <td>@item.Ten_Dienthoai</td>
+                                            <td><button type="button" class="btn btn-outline-primary mx-2">Thêm</button></td>
+                                        </tr>
+                                    }
+                                </tbody>
+
+                            </table>
+                            <nav class="d-flex flex-row justify-content-end" aria-label="Page navigation">
+                                <ul class="pagination">
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div><!-- End Sản phẩm -->
+    <!-- Begin Chi tiết phiếu nhập -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Chi tiết phiếu nhập</div>
+                    <table class="table table-responsive table-hover bg-white align-middle text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">
+                                Sản phẩm
+                            </th>
+                            <th scope="col">
+                                Giá nhập
+                            </th>
+                            <th scope="col">
+                                Số lượng nhập
+                            </th>
+                            <th scope="col">
+                                Tùy chọn
+                            </th>
+                        </tr>
+                        </thead>
+
+                        <tbody id="chiTietPhieuNhap">
+                        </tbody>
+
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Begin Chi tiết phiếu nhập -->
+
+        <textarea id="listCtpn" class="form-control d-none" name="listCtpn"></textarea>
+
+    </div>
+</form>
+<script>
+
+</script>

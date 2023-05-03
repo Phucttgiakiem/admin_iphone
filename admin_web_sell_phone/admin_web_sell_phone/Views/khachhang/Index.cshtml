@@ -1,0 +1,54 @@
+﻿@model List<admin_web_sell_phone.Models.KhachhangIndexModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Khách Hàng</h1>
+
+<p>
+    <a class="btn btn-primary" role="button" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Mã Khách Hàng
+            </th>
+            <th>
+                Tên Khách hàng
+            </th>
+            
+            <th>
+                Số Điện Thoại
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID_Khachhang)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenKhachhang)
+                </td>
+               
+                <td>
+                    @Html.DisplayFor(modelItem => item.sdt)
+                </td>
+               
+
+                <td>
+                    <a class="btn btn-outline-success" role="button" asp-action="Edit" asp-route-id="@item.ID_Khachhang">Edit</a> |
+                    <a class="btn btn-outline-danger" role="button" asp-action="Delete" asp-route-id="@item.ID_Khachhang">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

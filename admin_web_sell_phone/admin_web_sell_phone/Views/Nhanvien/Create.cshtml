@@ -1,0 +1,60 @@
+﻿@model NhanvienIndexModel
+
+<h1>Create</h1>
+
+<h4>Nhân Viên</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-action="Create">
+            
+            <div class="form-group">
+                <label asp-for="@Model.Tennhanvien" class="control-label">Tên Nhân viên</label>
+                <input asp-for="@Model.Tennhanvien" type="text" class="form-control" />
+                <span asp-validation-for="Tennhanvien" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Ngaysinh" class="control-label">Ngày Sinh</label>
+                <input asp-for="@Model.Ngaysinh" type="date" class="form-control" />
+                <span asp-validation-for="@Model.Ngaysinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Diachi" class="control-label">Địa chỉ</label>
+                <input asp-for="@Model.Diachi" type="text" class="form-control" />
+                <span asp-validation-for="@Model.Diachi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.sdt" class="control-label">Số điện thoại</label>
+                <input asp-for="@Model.sdt" type="text" class="form-control" />
+                <span asp-validation-for="@Model.sdt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Email" class="control-label">Email</label>
+                <input asp-for="@Model.Email" type="text" class="form-control" />
+                <span asp-validation-for="@Model.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Hinhanh" class="control-label">Hình ảnh</label>
+                <input asp-for="@Model.Hinhanh" type="text" class="form-control" />
+                <span asp-validation-for="@Model.Hinhanh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.username" class="control-label">username</label>
+                <input asp-for="@Model.username" type="text" class="form-control" />
+                <span asp-validation-for="@Model.username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.password" class="control-label">password</label>
+                <input type="password" asp-for="@Model.password"  class="form-control" />
+                <span asp-validation-for="@Model.password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
